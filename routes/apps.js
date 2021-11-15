@@ -1,19 +1,19 @@
-// CONTROLLERS
-const path = require('path');
+// ROUTES
+const express = require('express');
+
+const basicApps = require('../controllers/apps');
 
 
 
-const basicApp = (req, res) => {
-	
-	// res.status(200).send('Basic App route');
-	res.sendFile(path.resolve(__dirname, '../public/web-apps/assets/index.html'));
-};
+const router = express.Router();
+
+
+router.route('/').get(basicApps);
 
 
 
 
-module.exports = basicApp
-
+module.exports = router
 
 
 
