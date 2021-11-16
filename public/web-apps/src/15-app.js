@@ -1,6 +1,0 @@
-// Math - built-in object
-
-
-
-
-
