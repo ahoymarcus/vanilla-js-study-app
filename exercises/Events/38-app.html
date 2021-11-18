@@ -55,20 +55,29 @@
 			border: none;
 		}
 
-		
+		a {
+			display: block;
+			margin-top: 100vh;
+		}
 	</style>
 </head>
 
-	<h2 >I'm sitting outside a container</h2>
-
-	<hr />
+	<p class="p1">using e.currentTarget</p>
+	<p class="p1">
+		to <strong>style <strong>the element which </strong></strong>
+	</p>
+	<p class="p1">was attached to the handler</p>
+	
+	<br />
+	<br />
 	<br />
 
-	<div class="container">
-		<!-- <h1 class="heading">I'm sitting inside a container</h1> -->
-	</div>
+	<p class="p2">using e.target</p>
+	<p class="p2">
+		to <strong>style <strong>within the  </strong></strong>
+	</p>
+	<p class="p2">nested elements</p>
 
-	<button class="btn">click me</button>
 
 
 
@@ -77,9 +86,9 @@
 	<br />
 	<br />
 	<!-- javascript -->
-	<p onclick="this.classList.contains('red') ? this.classList.remove('red') : this.classList.add('red')">in this element you find the old styling method, but not a good approach!!! :-)</p>
+	<p onclick="this.classList.contains('red') ? this.classList.remove('red') : this.classList.add('red')">the old styling method, but not a good approach!!! :-)</p>
 
-	<script src="../src/41-app.js">
+	<script src="../src/38-app.js">
 		
 	</script>
 </html>

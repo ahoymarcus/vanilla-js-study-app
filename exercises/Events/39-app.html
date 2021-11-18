@@ -59,16 +59,27 @@
 	</style>
 </head>
 
-	<h2 >I'm sitting outside a container</h2>
-
-	<hr />
-	<br />
+	<h3>This exercise target the outer elements, but tries to catch also the inner elements through the bubbling effect</h3>
+	<h3>So, without direct targeting inner elements of the list, they are selected.</h3>
+	<h3>Check the console!!!</h3>
 
 	<div class="container">
-		<!-- <h1 class="heading">I'm sitting inside a container</h1> -->
+		<ul class="list-items">
+			<li class="item"> Not a link
+				<a href="#" class="link">link</a>
+				Not a link
+			</li>
+			<li class="item">Not a link
+				<a href="#" class="link">link</a>
+				Not a link
+			</li>
+			<li class="item">Not a link
+				<a href="#" class="link">link</a>
+				Not a link
+			</li>
+		</ul>
 	</div>
 
-	<button class="btn">click me</button>
 
 
 
@@ -79,7 +90,7 @@
 	<!-- javascript -->
 	<p onclick="this.classList.contains('red') ? this.classList.remove('red') : this.classList.add('red')">in this element you find the old styling method, but not a good approach!!! :-)</p>
 
-	<script src="../src/41-app.js">
+	<script src="../src/39-app.js">
 		
 	</script>
 </html>
